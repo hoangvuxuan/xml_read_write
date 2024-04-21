@@ -18,3 +18,4 @@ D:\c#\XML_read_write\XML_read_write\obj\Debug\net8.0-windows\refint\XML_read_wri
 D:\c#\XML_read_write\XML_read_write\obj\Debug\net8.0-windows\XML_read_write.pdb
 D:\c#\XML_read_write\XML_read_write\obj\Debug\net8.0-windows\XML_read_write.genruntimeconfig.cache
 D:\c#\XML_read_write\XML_read_write\obj\Debug\net8.0-windows\ref\XML_read_write.dll
+D:\c#\XML_read_write\XML_read_write\obj\Debug\net8.0-windows\XML_read_write.sourcelink.json

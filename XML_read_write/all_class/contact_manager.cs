@@ -14,9 +14,9 @@ namespace XML_read_write.all_class
 {
     internal static class contact_manager
     {
-        public static void create_file()
+        public static void create_file(string file_path)
         {
-            if(!File.Exists("data.xml"))
+            if(!File.Exists(file_path))
             {
                 XmlDocument newXmlDoc = new XmlDocument();
                 XmlDeclaration xmlDeclaration = newXmlDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
@@ -25,14 +25,14 @@ namespace XML_read_write.all_class
                 newXmlDoc.AppendChild(rootElement);
 
                 // Lưu tệp XML mới
-                newXmlDoc.Save("data.xml");
+                newXmlDoc.Save(file_path);
             }          
         }
 
-        public static void load_xml(DataGrid dg)
+        public static void load_xml(DataGrid dg, string file_path)
         {
             List<contact_item> contact_Items = new List<contact_item>();
-            XDocument xDocument = XDocument.Load("data.xml");
+            XDocument xDocument = XDocument.Load(file_path);
   
             foreach (XElement childElement in xDocument.Descendants("xml_doc"))
             {
@@ -53,9 +53,9 @@ namespace XML_read_write.all_class
             dg.ItemsSource = contact_Items;
         }
 
-        public static void add_xml(contact_item contact)
+        public static void add_xml(contact_item contact, string file_path)
         {
-            XDocument doc = XDocument.Load("data.xml");
+            XDocument doc = XDocument.Load(file_path);
             doc.Root.Add(
                 new XElement(
                     "xml_doc",
@@ -66,7 +66,7 @@ namespace XML_read_write.all_class
                     new XElement("phone", contact.Phone)
                     )
                 );
-            doc.Save("data.xml");
+            doc.Save(file_path);
         }
     }
 }

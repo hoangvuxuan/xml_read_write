@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Data;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -17,19 +18,18 @@ namespace XML_read_write
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int i = 0;
-         
+       
         public MainWindow()
         {
             InitializeComponent();
-            contact_manager.create_file();
-            contact_manager.load_xml(DGV);
+            contact_manager.create_file(Const_Value.file_path);
+            contact_manager.load_xml(DGV, Const_Value.file_path);
         }
 
         private void bt_add_Click(object sender, RoutedEventArgs e)
         {
-            contact_item item = new contact_item(); 
-            item.Id = i.ToString();
+            contact_item item = new contact_item();           
+            item.Id = DGV.Items.Count.ToString();
             item.F_name = tb_fname.Text;
             item.L_name = tb_lname.Text;
             item.Phone = tb_phone.Text;
@@ -42,9 +42,9 @@ namespace XML_read_write
                 }
             }
 
-            contact_manager.add_xml(item);
-            contact_manager.load_xml(DGV);
-            i++;
+            contact_manager.add_xml(item, Const_Value.file_path);
+            contact_manager.load_xml(DGV, Const_Value.file_path);
+             
         }
     }
 }

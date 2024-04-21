@@ -7,15 +7,19 @@
       "RelativeMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|solutionrelative:xml_read_write\\all_class\\contact_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|d:\\c#\\xml_read_write\\xml_read_write\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|D:\\c#\\XML_read_write\\xml_read_write\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|solutionrelative:xml_read_write\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|d:\\c#\\xml_read_write\\xml_read_write\\all_class\\contact_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|D:\\c#\\XML_read_write\\xml_read_write\\all_class\\contact_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|solutionrelative:xml_read_write\\all_class\\contact_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|d:\\c#\\xml_read_write\\xml_read_write\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|d:\\c#\\xml_read_write\\xml_read_write\\all_class\\const_value.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|solutionrelative:xml_read_write\\all_class\\const_value.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|D:\\c#\\XML_read_write\\xml_read_write\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{99626092-101E-482B-8815-9AB7BD483290}|XML_read_write\\XML_read_write.csproj|solutionrelative:xml_read_write\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 285,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Const_Value.cs",
+              "DocumentMoniker": "D:\\c#\\XML_read_write\\XML_read_write\\all_class\\Const_Value.cs",
+              "RelativeDocumentMoniker": "XML_read_write\\all_class\\Const_Value.cs",
+              "ToolTip": "D:\\c#\\XML_read_write\\XML_read_write\\all_class\\Const_Value.cs",
+              "RelativeToolTip": "XML_read_write\\all_class\\Const_Value.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T20:52:22.763Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -49,7 +66,7 @@
               "RelativeDocumentMoniker": "XML_read_write\\all_class\\contact_manager.cs",
               "ToolTip": "D:\\c#\\XML_read_write\\XML_read_write\\all_class\\contact_manager.cs",
               "RelativeToolTip": "XML_read_write\\all_class\\contact_manager.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAswC8AAAA6AAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAswB8AAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T06:16:41.172Z",
               "EditorCaption": ""
@@ -62,22 +79,21 @@
               "RelativeDocumentMoniker": "XML_read_write\\MainWindow.xaml.cs",
               "ToolTip": "D:\\c#\\XML_read_write\\XML_read_write\\MainWindow.xaml.cs",
               "RelativeToolTip": "XML_read_write\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwB8AAAAhAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T06:08:41.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\c#\\XML_read_write\\XML_read_write\\MainWindow.xaml",
               "RelativeDocumentMoniker": "XML_read_write\\MainWindow.xaml",
               "ToolTip": "D:\\c#\\XML_read_write\\XML_read_write\\MainWindow.xaml",
               "RelativeToolTip": "XML_read_write\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-21T05:24:42.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T05:24:42.494Z"
             }
           ]
         }
