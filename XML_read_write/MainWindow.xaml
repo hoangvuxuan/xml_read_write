@@ -1,0 +1,81 @@
+﻿<Window x:Class="XML_read_write.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XML_read_write"
+        mc:Ignorable="d"
+        Title="demo_XML" Height="450" Width="800">
+    <Grid Background="Beige" Margin="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="210,0,0,0" Grid.RowSpan="2">
+            <ScrollViewer>
+                <DataGrid 
+                    x:Name="DGV" 
+                    AutoGenerateColumns="True"
+                    Background="BlanchedAlmond"
+                    Height="300"
+                    >
+                </DataGrid>
+            </ScrollViewer>
+        </StackPanel>
+
+        <StackPanel Margin="0, 0, 0, 2" HorizontalAlignment="Left" Width="185" Grid.RowSpan="2">
+
+            <Label 
+                Content="Phone infor:"
+                Foreground="Black"
+                FontSize="18"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+            ></Label>
+
+
+            <Label 
+                Content="First Name:"
+                Foreground="Black"
+                FontSize="10"              
+                HorizontalAlignment="Center"
+            ></Label>
+            <TextBox x:Name="tb_fname"></TextBox>
+
+
+            <Label 
+                Content="Last Name:"
+                Foreground="Black"
+                FontSize="10"              
+                HorizontalAlignment="Center"
+            ></Label>
+            <TextBox x:Name="tb_lname"></TextBox>
+
+            <Label 
+                Content="Gender:"
+                Foreground="Black"
+                FontSize="10"              
+                HorizontalAlignment="Center"
+            ></Label>
+            <StackPanel x:Name="gender_group">
+                <RadioButton GroupName="gender" Content="Male"></RadioButton>
+                <RadioButton GroupName="gender" Content="Female"></RadioButton>
+            </StackPanel>
+            
+
+            <Label 
+                Content="Phone:"
+                Foreground="Black"
+                FontSize="10"              
+                HorizontalAlignment="Center"
+            ></Label>
+            <TextBox x:Name="tb_phone"></TextBox>
+
+            <Button x:Name="bt_add" Content="add new contact" Margin ="0 20" FontWeight="Bold" Click="bt_add_Click"></Button>
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
