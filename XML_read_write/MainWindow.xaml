@@ -12,6 +12,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Margin="210,0,0,0" Grid.RowSpan="2">
+            <ComboBox Name="cb_list_file" SelectionChanged="cb_list_file_SelectionChanged">
+                
+            </ComboBox>
             <ScrollViewer>
                 <DataGrid 
                     x:Name="DGV" 
@@ -21,6 +24,12 @@
                     >
                 </DataGrid>
             </ScrollViewer>
+
+            <DockPanel Margin="0 6">
+                <TextBox x:Name="tb_new_list" Width="415"></TextBox>
+                <Button Content="add list" Width="133" Click="Button_Click"/>
+            </DockPanel>
+
         </StackPanel>
 
         <StackPanel Margin="0, 0, 0, 2" HorizontalAlignment="Left" Width="185" Grid.RowSpan="2">

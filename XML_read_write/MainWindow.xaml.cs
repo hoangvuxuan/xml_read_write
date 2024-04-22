@@ -10,6 +10,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using XML_read_write.all_class;
+using System.IO;
+using Path = System.IO.Path;
 
 namespace XML_read_write
 {
@@ -18,12 +20,21 @@ namespace XML_read_write
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string file_path = "";
        
         public MainWindow()
         {
             InitializeComponent();
-            contact_manager.create_file(Const_Value.file_path);
-            contact_manager.load_xml(DGV, Const_Value.file_path);
+            contact_manager.get_list_file(cb_list_file);
+            //contact_manager.create_file(Const_Value.file_path);
+  
+        }
+
+        private void cb_list_file_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            file_path = @"store\" + cb_list_file.SelectedItem.ToString();
+            contact_manager.load_xml(DGV, file_path);
+
         }
 
         private void bt_add_Click(object sender, RoutedEventArgs e)
@@ -42,9 +53,45 @@ namespace XML_read_write
                 }
             }
 
-            contact_manager.add_xml(item, Const_Value.file_path);
-            contact_manager.load_xml(DGV, Const_Value.file_path);
+            if(file_path != "")
+            {
+                contact_manager.add_xml(item, file_path);
+                contact_manager.load_xml(DGV, file_path);
+            }
+            else
+            {
+                MessageBox.Show("chua chon danh sach contact");
+            }
+
              
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            string file_path = @"store\" + tb_new_list.Text + @".xml";
+            try
+            {
+                int i = contact_manager.create_file(file_path);
+                if(i == 1)
+                {
+                    MessageBox.Show($"tao file {file_path} thanh cong");
+                    contact_manager.get_list_file(cb_list_file);
+                }
+                else
+                {
+                    MessageBox.Show($"file da ton tai");
+
+                }
+
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        
     }
 }

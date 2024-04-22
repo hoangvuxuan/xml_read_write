@@ -14,7 +14,16 @@ namespace XML_read_write.all_class
 {
     internal static class contact_manager
     {
-        public static void create_file(string file_path)
+        public static void get_list_file(ComboBox cb)
+        {
+            cb.Items.Clear();
+            string[] file_list = Directory.GetFiles(@"store\");
+            foreach (string file in file_list)
+            {
+                cb.Items.Add(Path.GetFileName(file));
+            }
+        }
+        public static int create_file(string file_path)
         {
             if(!File.Exists(file_path))
             {
@@ -23,10 +32,12 @@ namespace XML_read_write.all_class
                 XmlElement rootElement = newXmlDoc.CreateElement("xml_doc");
                 newXmlDoc.AppendChild(xmlDeclaration);
                 newXmlDoc.AppendChild(rootElement);
-
-                // Lưu tệp XML mới
                 newXmlDoc.Save(file_path);
-            }          
+
+                return 1;
+            }
+
+            return 0;
         }
 
         public static void load_xml(DataGrid dg, string file_path)
